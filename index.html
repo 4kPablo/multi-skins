@@ -10,19 +10,26 @@
 </head>
 <body>
     
-    <nav class="nav-container">
-        <a class="nav-item" href="#">Categoría</a>
-        <a class="nav-item" href="#">
-            <img src="./img/logo/logo_white_large.png" alt="">
-        </a>
-        <a class="nav-item" href="#">Instalar app</a>
-        <a class="nav-item" href="#">Ingresar</a>
+    <nav class="nav-supercontainer">
+        <div class="nav-container"> <!--Items del nav de la zquierda-->
+            <a class="nav-item" href="#">Categoría</a>
+        </div>
+        <div class="nav-container"> <!--Items del nav del centro-->
+            <a  class="nav-item nav-item__logo" href="#">
+                <img src="./img/logo/logo_white_large.png" alt="">
+            </a>
+        </div>
+        <div class="nav-container"> <!--Items del nav de la derecha-->
+            <a class="nav-item" href="#">Instalar app</a>
+            <a class="nav-item" href="#">Ingresar</a>
+        </div>
     </nav>
+    
     <div class="search">
         <input type="text" placeholder="Buscar">
     </div>
     <div class="games-container">
-        <div class="games-item" class="games__payday2"> <h2>PAYDAY 2</h2></div>
+        <div class="games-item" class="games__payday2"><h2>PAYDAY 2</h2></div>
         <div class="games-item" class="games__csgo"><h2>CS:GO</h2></div>
         <div class="games-item" class="games__tf2"><h2>TEAM FORTESS 2</h2></div>
     </div>

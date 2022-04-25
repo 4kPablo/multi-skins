@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1098f7;
+}
+
+.nav-container {
+    background-color: #e9a1ad;
+    display: flex;
+    justify-content: center;
+    
+    align-items: baseline;
+}
+
+.nav-item {
+    border: solid 1px red;
+    text-align: center;
+    align-content: center;
+}
+
+.nav-item img {
+    height: 100px;
+}

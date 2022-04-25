@@ -47,3 +47,17 @@ body {
 .nav-item img {
     height: 70px;
 }
+
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 18px;
+}
+
+.search input {
+    border: none;
+    border-radius: 1em;
+    padding: 7px;
+    text-align: center;
+}

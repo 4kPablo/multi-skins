@@ -6,7 +6,7 @@
     --acento: #ea526f;
     --radio-suave: 1em;
     --radio-duro: 3px;
-    --tiempo-estandar: 170ms;
+    --tiempo-estandar: 200ms;
 }
 
 * {
@@ -15,6 +15,10 @@
     box-sizing: border-box;
     font-family: 'Nunito', sans-serif;
 }
+
+
+
+/* CSS general */
 
 body {
     background-color: var(--secundario);
@@ -42,7 +46,7 @@ body {
     color: #333;
     text-decoration: none;
     font-size: 16px;
-    transition: var(--tiempo-suave);
+    transition: var(--tiempo-estandar);
 }
 
 .nav-item:hover {
@@ -87,11 +91,10 @@ body {
 
 .games-container {
     display: flex;
-    /* outline: solid 1px blue; */
     justify-content: space-evenly;
 }
 
-.game {
+.card {
     display: flex;
     flex-direction: column;
     width: 30vw;
@@ -106,19 +109,51 @@ body {
     top: -40px;
 }
 
-.game-title {
+.card-title {
     padding: 0 0 20px;
 }
 
 .game-item-container {
     display: flex;
     gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .game-item {
+    display: flex;
+    flex-direction: column;
     background-color: var(--primario);
     border-radius: var(--radio-suave);
     transition: var(--tiempo-estandar);
+    /* height: 170px; */
+    width: 160px;
+    align-content: center;
+}
+
+.game-item__precio {
+    position: relative;
+    bottom: 40px;
+    height: 0px;
+    font-size: 20px;
+    pointer-events: none; // Evita anular el link si clickeas en el indicador de precio
+}
+
+.barato::after {
+    content: "barato";
+}
+
+.maso::after {
+    content: "maso";
+}
+
+.caro::after {
+    content: "caro";
+}
+
+.sin-stock::after {
+    content: "(sin stock)";
+    color: crimson;
 }
 
 .game-item:hover {
@@ -126,5 +161,15 @@ body {
 }
 
 .game-item img {
-    height: 120px;
+    height: 150px;
+}
+
+
+
+/* CSS específico de about.html */
+
+.form-supercontainer {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 72px;
 }

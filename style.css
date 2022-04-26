@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap');
 
 :root {
-    --primario: #e9a1ad;
-    --secundario: #559ed1;
+    --primario: #ce96f3;
+    --secundario: #7371FC;
+    --terciario: #A594F9;
     --acento: #ea526f;
+    --claro: #F5EFFF;
     --radio-suave: 1em;
     --radio-duro: 3px;
     --tiempo-estandar: 200ms;
@@ -50,7 +52,7 @@ body {
 }
 
 .nav-item:hover {
-    background-color: white;
+    background-color: var(--claro);
 }
 
 .nav-item__logo {
@@ -100,7 +102,7 @@ body {
     width: 30vw;
     padding: 20px;
     margin-bottom: 30px;
-    border: solid 5px white;
+    border: solid 5px var(--claro);
     border-radius: var(--radio-duro);
     text-align: center;
 }
@@ -124,12 +126,12 @@ body {
 .game-item {
     display: flex;
     flex-direction: column;
-    background-color: var(--primario);
+    background-color: var(--terciario);
     border-radius: var(--radio-suave);
     transition: var(--tiempo-estandar);
-    /* height: 170px; */
     width: 160px;
     align-content: center;
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.177);
 }
 
 .game-item__precio {
@@ -158,7 +160,7 @@ body {
 }
 
 .game-item:hover {
-    background-color: white;
+    background-color: var(--claro);
 }
 
 .game-item img {
@@ -208,7 +210,7 @@ body {
 }
 
 .form-item__boton:hover {
-    background-color: white;
+    background-color: var(--claro);
 }
 
 .form-item__boton:focus {

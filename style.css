@@ -2,8 +2,11 @@
 
 :root {
     --primario: #e9a1ad;
-    --secundario: #1098f7;
+    --secundario: #559ed1;
     --acento: #ea526f;
+    --radio-suave: 1em;
+    --radio-duro: 3px;
+    --tiempo-estandar: 170ms;
 }
 
 * {
@@ -35,11 +38,11 @@ body {
     align-content: center;
     margin: 10px;
     padding: 6px 12px;
-    border-radius: 1em;
+    border-radius: var(--radio-suave);
     color: #333;
     text-decoration: none;
     font-size: 16px;
-    transition: 170ms;
+    transition: var(--tiempo-suave);
 }
 
 .nav-item:hover {
@@ -56,6 +59,7 @@ body {
 
 .nav-item__logo img {
     height: 60px;
+    width: 222px;
 }
 
 .nav-item__logo:hover {
@@ -66,13 +70,14 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 18px;
+    margin: 20px;
 }
 
 .search input {
     border: none;
-    border-radius: 5px;
+    border-radius: var(--radio-duro);
     padding: 7px;
+    width: 222px;
     text-align: center;
 }
 
@@ -82,13 +87,44 @@ body {
 
 .games-container {
     display: flex;
-    outline: solid 1px blue;
+    /* outline: solid 1px blue; */
     justify-content: space-evenly;
 }
 
-.games-item {
+.game {
+    display: flex;
+    flex-direction: column;
     width: 30vw;
     padding: 20px;
-    outline: solid 2px greenyellow;
+    border: solid 5px white;
+    border-radius: var(--radio-duro);
     text-align: center;
+}
+
+.game-payday, .game-tf2 {
+    position: relative;
+    top: -40px;
+}
+
+.game-title {
+    padding: 0 0 20px;
+}
+
+.game-item-container {
+    display: flex;
+    gap: 20px;
+}
+
+.game-item {
+    background-color: var(--primario);
+    border-radius: var(--radio-suave);
+    transition: var(--tiempo-estandar);
+}
+
+.game-item:hover {
+    background-color: white;
+}
+
+.game-item img {
+    height: 120px;
 }

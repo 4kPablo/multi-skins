@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" type="image/png" href="./img/logo/logo_small_icon_only_inverted.png"/>
-    <title>Multi~skins homepage</title>
+    <title>Multi~skins - Ingresar</title>
 </head>
 <body>
     
@@ -25,11 +25,21 @@
         </div>
     </nav>
 
-    <div class="form-supercontainer"> <!-- Acerca de -->
-        <div class="card">
-            <h2 class="card-title"> ACERCA DE</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam repellat soluta voluptates velit deserunt error quisquam commodi ab esse voluptatem tempora, asperiores quis aperiam numquam quaerat a aut praesentium ea, neque est totam? Nostrum deserunt temporibus possimus distinctio maiores, totam rem dolore dolores! Similique delectus ullam alias nam placeat explicabo veritatis velit unde nemo numquam ea, sint corrupti repellat illo vel reprehenderit tenetur iure quod laboriosam exercitationem quisquam cupiditate repudiandae.</p>
+    <form class="form-supercontainer"> <!-- Formulario -->
+        <div class="card form">
+            <h2 class="card-title"> INICIAR SESIÓN </h2>
+            <div class="form-item">
+                <label for="email">Correo electrónico</label>
+                <input class="form-item__input" type="email" id="email" placeholder="Escribí tu email">
+            </div>
+            <div class="form-item">
+                <label for="asunto">Contraseña</label>
+                <input class="form-item__input" type="password" id="asunto" placeholder="Escribí la contraseña">
+            </div>
+            <div class="form-item">
+                <input class="form-item__input form-item__boton" type="submit" value="Entrar">
+            </div>    
         <div>
-    </div>
+    </form>
 </body>
 </html>

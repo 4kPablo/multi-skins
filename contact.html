@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" type="image/png" href="./img/logo/logo_small_icon_only_inverted.png"/>
-    <title>Multi~skins homepage</title>
+    <title>Multi~skins - Contacto</title>
 </head>
 <body>
     
@@ -26,9 +26,27 @@
     </nav>
 
     <form class="form-supercontainer"> <!-- Formulario -->
-        <div class="card">
-            <h2 class="card-title"> CONTACTO</h2>
-
+        <div class="card form">
+            <h2 class="card-title"> CONTACTO </h2>
+            <div class="form-item">
+                <label for="nombre">Nombre completo</label>
+                <input class="form-item__input" type="text" id="nombre" placeholder="Escribí tu nombre">
+            </div>
+            <div class="form-item">
+                <label for="email">Correo electrónico</label>
+                <input class="form-item__input" type="email" id="email" placeholder="Escribí tu email">
+            </div>
+            <div class="form-item">
+                <label for="asunto">Asunto</label>
+                <input class="form-item__input" type="text" id="asunto" placeholder="Escribí el asunto">
+            </div>
+            <div class="form-item">
+                <label for="mensaje">Mensaje</label>
+                <textarea class="form-item__input" id="mensaje" cols="19" rows="5" placeholder="Escribí tu mensaje"></textarea>
+            </div>
+            <div class="form-item">
+                <input class="form-item__input form-item__boton" type="submit" value="Enviar">
+            </div>    
         <div>
     </form>
 </body>

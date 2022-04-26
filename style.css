@@ -99,6 +99,7 @@ body {
     flex-direction: column;
     width: 30vw;
     padding: 20px;
+    margin-bottom: 30px;
     border: solid 5px white;
     border-radius: var(--radio-duro);
     text-align: center;
@@ -136,7 +137,7 @@ body {
     bottom: 40px;
     height: 0px;
     font-size: 20px;
-    pointer-events: none; // Evita anular el link si clickeas en el indicador de precio
+    pointer-events: none; /* Evita anular el link si clickeas en el indicador de precio */
 }
 
 .barato::after {
@@ -172,4 +173,44 @@ body {
     display: flex;
     justify-content: space-evenly;
     margin: 72px;
+}
+
+
+
+/* CSS específico de contact.html */
+
+.form {
+    gap: 15px;
+    width: 400px;
+}
+
+.form-item {
+    display: flex;
+    flex-direction: column;
+    /* outline: solid 1px red; */
+}
+
+.form-item__input {
+    border-radius: var(--radio-suave);
+    border: none;
+    padding: 10px;
+}
+
+.form-item textarea {
+    resize: none;
+}
+
+.form-item__boton {
+    align-self: center;
+    width: 100px;
+    background-color: var(--primario);
+    transition: var(--tiempo-estandar);
+}
+
+.form-item__boton:hover {
+    background-color: white;
+}
+
+.form-item__boton:focus {
+    background-color: var(--acento);
 }

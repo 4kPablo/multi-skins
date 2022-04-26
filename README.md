@@ -1,3 +1,3 @@
-Página para ver y comprar skins bonitas uwu
+Página para ver y comprar skins bonitas del mercado de Steam uwu
 
-### 🛠️ WORK IN PROGRESS 🛠️
+### 💲 Ojo que los links de compra son reales 💲

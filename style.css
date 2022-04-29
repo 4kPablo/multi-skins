@@ -1,21 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Radio+Canada&display=swap');
 :root {
-    --primario: #ce96f3;
+    --primario: #001496;
     --secundario: #7371FC;
-    --terciario: #A594F9;
-    --acento: #ea526f;
+    --terciario: #b08ffb;
+    --acento: #820263;
     --claro: #F5EFFF;
     --radio-suave: 1em;
     --radio-duro: 3px;
-    --tiempo-estandar: 200ms;
+    --tiempo-estandar: 250ms;
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Radio Canada', sans-serif;
 }
 
 
@@ -23,7 +22,12 @@
 /* CSS general */
 
 body {
-    background-color: var(--secundario);
+    background: rgb(115,113,252);
+    background: linear-gradient(180deg, rgba(115,113,252,1) 0%, rgba(82,80,204,1) 100%);
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .nav-supercontainer {
@@ -45,7 +49,7 @@ body {
     margin: 10px;
     padding: 6px 12px;
     border-radius: var(--radio-suave);
-    color: #333;
+    color: var(--claro);
     text-decoration: none;
     font-size: 16px;
     transition: var(--tiempo-estandar);
@@ -53,6 +57,7 @@ body {
 
 .nav-item:hover {
     background-color: var(--claro);
+    color: var(--primario);
 }
 
 .nav-item__logo {
@@ -69,7 +74,10 @@ body {
 }
 
 .nav-item__logo:hover {
+    height: 60px;
+    width: 222px;
     background-color: transparent;
+    content:url("./img/logo_white_large.png");
 }
 
 .search {
@@ -101,7 +109,6 @@ body {
     flex-direction: column;
     width: 30vw;
     padding: 20px;
-    margin-bottom: 30px;
     border: solid 5px var(--claro);
     border-radius: var(--radio-duro);
     text-align: center;
@@ -127,7 +134,7 @@ body {
     display: flex;
     flex-direction: column;
     background-color: var(--terciario);
-    border-radius: var(--radio-suave);
+    border-radius: 0.5em;
     transition: var(--tiempo-estandar);
     width: 160px;
     align-content: center;
@@ -171,15 +178,52 @@ body {
 
 /* CSS específico de about.html */
 
-.form-supercontainer {
+.card-supercontainer {
     display: flex;
-    justify-content: space-evenly;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
     margin: 72px;
+    gap: 30px;
+}
+
+.about-card {
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    height: 695px;
+    padding: 20px;
+    border: solid 5px var(--claro);
+    border-radius: var(--radio-duro);
+    text-align: center;
+    align-items: center;
+}
+
+.about-card h3 {
+    margin-bottom: 3px;
+}
+
+.about-card img {
+    padding-top: 20px;
+    width: 500px;
+}
+
+.about-card-games {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 30vw;
 }
 
 
 
 /* CSS específico de contact.html */
+
+.form-supercontainer {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 72px;
+}
 
 .form {
     gap: 15px;
@@ -189,7 +233,10 @@ body {
 .form-item {
     display: flex;
     flex-direction: column;
-    /* outline: solid 1px red; */
+}
+
+.form-item label {
+    margin-bottom: 5px;
 }
 
 .form-item__input {
@@ -207,12 +254,15 @@ body {
     width: 100px;
     background-color: var(--primario);
     transition: var(--tiempo-estandar);
+    color: var(--claro);
 }
 
 .form-item__boton:hover {
     background-color: var(--claro);
+    color: var(--primario);
 }
 
 .form-item__boton:focus {
     background-color: var(--acento);
+    color: var(--claro);
 }
